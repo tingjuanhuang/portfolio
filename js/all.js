@@ -1,4 +1,8 @@
 $(function() {
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  }
+  
   //Hamburger Animation
   const body = document.querySelector("body");
   const hamburger = document.querySelector(".hamburger");
