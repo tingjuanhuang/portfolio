@@ -1149,3 +1149,39 @@ footer {
 body.dark-mode footer {
   color: rgba(255, 255, 255, 0.2);
 }
+
+.fadedown,
+.fadeup {
+  will-change: transform;
+  opacity: 0;
+  -webkit-transition: 0.8s all cubic-bezier(0.19, 1, 0.22, 1);
+  -moz-transition: 0.8s all cubic-bezier(0.19, 1, 0.22, 1);
+  transition: 0.8s all cubic-bezier(0.19, 1, 0.22, 1);
+  -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.fadeup {
+  -webkit-transform: translateY(50px);
+     -moz-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+}
+
+.fadedown {
+  -webkit-transform: translateY(-50px);
+     -moz-transform: translateY(-50px);
+      -ms-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.fadedown.animate,
+.fadeup.animate {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+     -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}

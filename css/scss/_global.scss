@@ -932,3 +932,24 @@ footer {
 body.dark-mode footer {
   color: rgba(255, 255, 255, 0.2);
 }
+
+
+// animation
+.fadedown,
+.fadeup {
+  will-change: transform;
+  opacity: 0;
+  transition: .8s all cubic-bezier(0.19, 1, 0.22, 1);
+  transform: translateY(50px);
+}
+.fadeup {
+  transform: translateY(50px);
+}
+.fadedown {
+  transform: translateY(-50px);
+}
+.fadedown.animate,
+.fadeup.animate {
+  opacity: 1;
+  transform: translateY(0);
+}

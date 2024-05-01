@@ -14,22 +14,6 @@ $(function() {
       hamburger.classList.toggle("menu-toggle");
   });
 
-  // portfolio single
-  const element = document.querySelector('#cover');
-  const page = document.querySelector('#project');
-  const imgElement = document.querySelector(".header-logo > img");
-  const offsetBottom = element.offsetTop + element.offsetHeight - 30;
-
-  // $(window).on('scroll', function() {
-  //     if ($(this).scrollTop() > offsetBottom) {
-  //       page.classList.remove('dark-mode');
-  //       imgElement.setAttribute('src', './img/Logo.svg');
-  //     } else {
-  //       page.classList.add('dark-mode');
-  //       imgElement.setAttribute('src', './img/Logo-dark.svg');
-  //     }
-  // });
-
   // gototop
   const progressPath = document.querySelector('.progress-wrap path');
   const pathLength = progressPath.getTotalLength();
@@ -60,4 +44,22 @@ $(function() {
     jQuery('html, body').animate({scrollTop: 0}, duration);
     return false;
   })
+
+  var observer = new IntersectionObserver(
+    function (entries) {
+      entries.forEach(function (entry) {
+        var el = entry.target;
+        if (entry.isIntersecting) {
+          el.classList.add("animate");
+          return;
+        }
+      });
+    },
+    { threshold: 0.2 }
+  );
+  document.querySelectorAll(".animation").forEach(function (i) {
+    if (i) {
+      observer.observe(i);
+    }
+  });
 });

@@ -1,17 +1,3 @@
-// $(function() {
-//     var selectedClass = "";
-//     $(".filter-tag").click(function(){
-//         selectedClass = $(this).attr("data-rel");
-//         $(this).addClass('active').siblings().removeClass('active');
-//         $("#portfolio").fadeTo(100, 0.1);
-//         $("#portfolio .project-item").not("."+selectedClass).fadeOut();
-//         setTimeout(function() {
-//             $("."+selectedClass).fadeIn();
-//             $("#portfolio").fadeTo(500, 1);
-//         }, 500);
-// 	});
-// });
-
 document.addEventListener('DOMContentLoaded', function() {
     var selectedClass = "";
     var filterTags = document.querySelectorAll(".filter-tag");
