@@ -19,6 +19,10 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-medium:before {
+  content: "\e904";
+}
+
 .icon-instagram:before {
   content: "\e900";
 }

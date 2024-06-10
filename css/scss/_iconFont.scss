@@ -8,9 +8,9 @@
 	font-weight: normal;
 	font-style: normal;
 	font-display: block;
-  }
-  
-  i {
+}
+
+i {
 	font-family: 'icon-line' !important;
 	speak: never;
 	font-style: normal;
@@ -20,18 +20,20 @@
 	line-height: 1;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
-  }
-  
-  .icon-instagram:before {
+}
+
+.icon-medium:before {
+	content: "\e904";
+}
+.icon-instagram:before {
 	content: "\e900";
-  }
-  .icon-line:before {
+}
+.icon-line:before {
 	content: "\e901";
-  }
-  .icon-linkedin:before {
+}
+.icon-linkedin:before {
 	content: "\e902";
-  }
-  .icon-facebook:before {
+}
+.icon-facebook:before {
 	content: "\e903";
-  }
-  
+}
