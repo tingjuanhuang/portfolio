@@ -359,13 +359,14 @@ body.dark-mode .hamburger div {
 
 .nav-links .social-media {
   display: flex;
-  gap: 25px;
+  gap: 20px;
 }
 
 .nav-links .social-media > a > i {
   color: #fff;
-  font-size: 40px;
+  font-size: 36px;
   vertical-align: middle;
+  line-height: 1.8rem;
 }
 .nav-links {
   position: fixed;
@@ -484,10 +485,10 @@ body.dark-mode .hamburger div {
     transform-origin: left;
   }
   .nav-links .social-media {
-    gap: 15px;
+    gap: 10px;
   }
   .nav-links .social-media > a > i {
-    font-size: 30px;
+    font-size: 26px;
     color: var(--secondary);
   }
   //   body.dark-mode .nav-links .social-media > a > i {
