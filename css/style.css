@@ -19,6 +19,14 @@ i {
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-github:before {
+  content: "\e906";
+}
+
+.icon-codepen:before {
+  content: "\e905";
+}
+
 .icon-medium:before {
   content: "\e904";
 }
